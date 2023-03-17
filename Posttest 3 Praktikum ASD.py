@@ -6,7 +6,6 @@ from os import system
 from prettytable import PrettyTable
 
 # = = = DATABASE = = =
-# Harga_Tiket = [50000, 50000, 40000, 30000, 35000]
 Judul_Film = ["Perjanjian Gaib", 
               "Waktu Maghrib", 
               "Missing", 
@@ -190,14 +189,14 @@ def hapus():
         print_list(Judul, Genre, Duration, Studio)
 
         try:
-            ID = int(input("Input Index Pelanggan Ingin Dihapus : ")) 
+            ID = int(input("Input Index Data Ingin Dihapus : ")) 
         except:
             print("Gunakan Angka Saat Menginput Pilihan")
             continue
         ID = ID - 1
         hapus = ID 
         if ID == (hapus):
-            print("Anda Telah Menghapus ID",str(Judul_Film.pop(ID)),"dari Data Bioskop")
+            print("Anda Telah Menghapus Film",str(Judul_Film.pop(ID)),"dari Data Bioskop")
             
             Judul = buat_list(Judul_Film)
             Genre = buat_list(Genre_Film)
@@ -250,10 +249,10 @@ def Bioskop():
         print("="*30)
         print("===       Menu Pilihan     ===")     
         print("="*30)
-        print(" 1. Masukkan Data Film ")
-        print(" 2. Tampil Data Film ")
-        print(" 3. Edit Data Film ")
-        print(" 4. Hapus Data Film ")
+        print(" 1. Masukkan Data ")
+        print(" 2. Tampil Data ")
+        print(" 3. Edit Data ")
+        print(" 4. Hapus Data ")
         print(" 5. Exit")
         print("="*30)
         
